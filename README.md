@@ -1,11 +1,11 @@
-## This repository will contain basic example how to use Elasticsearch with Spring Boot
+:herb: ### This repository will contain basic example how to use Elasticsearch with Spring Boot :herb:
 
-### Prerequisites:
+#### Prerequisites:
 
 1. IntelliJ IDEA.
 2. Installed Maven and synchronized with IntelliJ
 
-### First step:
+#### First step:
 
 1. Create maven project in your IntelliJ IDEA.
 2. Add dependencies:
