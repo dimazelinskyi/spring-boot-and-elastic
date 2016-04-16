@@ -1,4 +1,4 @@
-package io.github.zelinskyi.runner;
+package io.github.zelinskyi;
 
 
 import org.springframework.boot.SpringApplication;
