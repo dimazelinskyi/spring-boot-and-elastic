@@ -1,4 +1,7 @@
-:herb: ### This repository will contain basic example how to use Elasticsearch with Spring Boot :herb:
+![alt text](./etc/sb_el.png "Spring Boot and Elasticsearch")
+
+
+### This repository will contain basic example how to use Elasticsearch with Spring Boot
 
 #### Prerequisites:
 
