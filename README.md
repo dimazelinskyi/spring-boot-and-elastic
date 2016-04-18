@@ -40,9 +40,10 @@
 ```
 
 * Also we need to add several dependencies (check the source code for that also [pom.xml](./pom.xml#L22-55)):
-  * spring-boot-starter-web
-  * spring-boot-starter-data-elasticsearch
-  * lombok
-  * spring-boot-starter-test
-  * json-path-assert
+  * _spring-boot-starter-web_ - we need this to create simple RESTful web service 
+  * _spring-boot-starter-data-elasticsearch_ - we need this to work easily with Elasticsearch   
+  * _lombok_ - useful tool library to simplify creating POJO 
+  * _spring-boot-starter-test_ - set of testing tool libraries
+  * _json-path-assert_ - helping library for unit tests
+
 * Hello
