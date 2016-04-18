@@ -12,10 +12,13 @@
 1. Installed Java IDE (In my case I will use IntelliJ IDEA‎).
 2. Installed Maven and synchronized with your IDE.
 
+
+#### Lets move to the example:
+
 ##### First step:
 
 1. Create maven project in your IDE.
-2. Add dependencies:
+2. Add Spring Boot dependencies into [pom.xml](./pom.xml#L10-22):
 
 ```xml
 <dependencyManagement>
