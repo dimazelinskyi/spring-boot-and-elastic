@@ -61,3 +61,8 @@
   * Check the source code of two classes:
     * [UserService.java](./src/main/java/io/github/zelinskyi/services/UserService.java)
     * [UserServiceImpl.java](./src/main/java/io/github/zelinskyi/services/impl/UserServiceImpl.java)
+    
+
+* **_Ok, so now lets move to most interesting part_**
+  * 
+
