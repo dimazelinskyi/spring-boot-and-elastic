@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Simple REST controller that consume User entity in format JSON
- * and converts it to plain java object.
+ * Simple REST controller that has two simple methods:
+ *
+ *  1. Save user - consume User entity in format JSON and save it to Elasticsearch.
+ *  2. Find user with id - consume id of User and returns saved entity from Elasticsearch.
  *
  */
 @RestController
@@ -22,5 +24,9 @@ public class UserController {
         userService.save(user);
     }
 
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public User find(@PathVariable Long id) {
+        return userService.find(id);
+    }
 
 }
