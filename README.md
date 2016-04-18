@@ -52,3 +52,12 @@
 * First of all we need simple plain java object as DTO (in our case it will be User).
   * We will implements this class with help of Lombok library.
   * Follow the source code: [User.java](./src/main/java/io/github/zelinskyi/domain/User.java)
+
+* Lets create controller:
+  * Check the source code of controller: [UserController.java](./src/main/java/io/github/zelinskyi/controllers/UserController.java)
+  * This is simple Spring Rest controller with two methods.
+
+* Also we need to implement service layer:
+  * Check the source code of two classes:
+    * [UserService.java](./src/main/java/io/github/zelinskyi/services/UserService.java)
+    * [UserServiceImpl.java](./src/main/java/io/github/zelinskyi/services/impl/UserServiceImpl.java)
