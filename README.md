@@ -21,8 +21,8 @@
 
 ##### First step:
 
-1. Create maven project in your IDE.
-2. Add Spring Boot dependencies into pom.xml (check the source code for that also [pom.xml](./pom.xml#L10-22)):
+* Create maven project in your IDE.
+* Add Spring Boot dependencies into pom.xml (check the source code for that also [pom.xml](./pom.xml#L10-22)):
 (We will add Spring Boot parent into dependency management section)
 
 ```xml
@@ -38,10 +38,11 @@
     </dependencies>
 </dependencyManagement>
 ```
-3. Also we need to add several dependencies (check the source code for that also [pom.xml](./pom.xml#L22-55)):
-- spring-boot-starter-web
-- spring-boot-starter-data-elasticsearch
-- lombok
-- spring-boot-starter-test
-- json-path-assert
-4. Hello
+
+* Also we need to add several dependencies (check the source code for that also [pom.xml](./pom.xml#L22-55)):
+  * spring-boot-starter-web
+  * spring-boot-starter-data-elasticsearch
+  * lombok
+  * spring-boot-starter-test
+  * json-path-assert
+* Hello
