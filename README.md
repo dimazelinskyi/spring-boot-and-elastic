@@ -1,8 +1,8 @@
 ![alt text](./etc/sb_el.png "Spring Boot and Elasticsearch")
 
 
-## Very simple example of usage Elasticsearch and Spring Boot together
-
+## Simple example of usage Elasticsearch and Spring Boot together
+***
 
 #### Some short info from Wikipedia:
 
@@ -47,4 +47,8 @@
   * **_spring-boot-starter-test_** - set of testing tool libraries
   * **_json-path-assert_** - helping library for unit tests
 
-* Hello
+##### Second step:
+
+* First of all we need simple plain java object as DTO (in our case it will be User).
+  * We will implements this class with help of Lombok library.
+  * Follow the source code: [User.java](./src/main/java/io/github/zelinskyi/domain/User.java)
