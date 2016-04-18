@@ -1,16 +1,20 @@
 ![alt text](./etc/sb_el.png "Spring Boot and Elasticsearch")
 
 
-### This repository will contain basic example how to use Elasticsearch with Spring Boot
+## Very simple example of usage Elasticsearch and Spring Boot together
+
+#### Some short info from Wikipedia:
+ 1. Elasticsearch - is a search server based on Lucene.
+ 2. Spring Boot - is Spring's convention-over-configuration solution for creating stand-alone, production-grade Spring based Applications that you can "just run".
 
 #### Prerequisites:
 
-1. IntelliJ IDEA.
-2. Installed Maven and synchronized with IntelliJ
+1. IntelliJ IDEA or any other Java IDE.
+2. Installed Maven and synchronized with your IDE.
 
 #### First step:
 
-1. Create maven project in your IntelliJ IDEA.
+1. Create maven project in your IDE.
 2. Add dependencies:
 
 ```xml
