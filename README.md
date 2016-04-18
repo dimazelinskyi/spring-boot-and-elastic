@@ -3,9 +3,12 @@
 
 ## Very simple example of usage Elasticsearch and Spring Boot together
 
+
 #### Some short info from Wikipedia:
+
  1. **Elasticsearch** - is a search server based on Lucene.
  2. **Spring Boot** - is Spring's convention-over-configuration solution for creating stand-alone, production-grade Spring based Applications that you can "just run".
+
 
 #### Prerequisites:
 
@@ -15,10 +18,12 @@
 
 #### Lets move to the example:
 
+
 ##### First step:
 
 1. Create maven project in your IDE.
-2. Add Spring Boot dependencies into [pom.xml](./pom.xml#L10-22):
+2. Add Spring Boot dependencies into pom.xml (check the source code for that also [pom.xml](./pom.xml#L10-22)):
+(We will add Spring Boot parent into dependency management section)
 
 ```xml
 <dependencyManagement>
@@ -33,3 +38,10 @@
     </dependencies>
 </dependencyManagement>
 ```
+3. Also we need to add several dependencies (check the source code for that also [pom.xml](./pom.xml#L22-55)):
+- spring-boot-starter-web
+- spring-boot-starter-data-elasticsearch
+- lombok
+- spring-boot-starter-test
+- json-path-assert
+4. Hello
