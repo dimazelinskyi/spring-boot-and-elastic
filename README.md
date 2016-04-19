@@ -85,13 +85,28 @@ Lets run application and check it:
 
 Now we can check our creation and searching user by invoking url with payload:
 
-* URL
+* To check creation of user invoke this url with next JSON payload using POST HTTP method: 
 
 ```
 127.0.0.1:8080/user
 ```
 
-* JSON
+
+```json
+{
+  "id": 1,
+  "firstName": "John",
+  "lastName": "Smith"
+}
+```
+
+* To check the searching of user just invoke the url using GET HTTP method:
+
+```
+127.0.0.1:8080/user/1
+```
+
+You should see the answer like: 
 
 ```json
 {
