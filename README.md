@@ -82,3 +82,21 @@ Check you project tree structure it should be like in repo:
 Lets run application and check it:
 
 * To run it just run the class **SpringBootElasticsearchRunner**
+
+Now we can check our creation and searching user by invoking url with payload:
+
+* URL
+
+```
+127.0.0.1:8080/user
+```
+
+* JSON
+
+```json
+{
+  "id": 1,
+  "firstName": "John",
+  "lastName": "Smith"
+}
+```
