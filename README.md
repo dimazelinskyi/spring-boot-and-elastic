@@ -25,20 +25,6 @@
 * Add Spring Boot dependencies into pom.xml (check the source code for that also [pom.xml](./pom.xml#L10-22)):
 (We will add Spring Boot parent into dependency management section)
 
-```xml
-<dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-dependencies</artifactId>
-            <version>1.3.3.RELEASE</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-    </dependencies>
-</dependencyManagement>
-```
-
 * Also we need to add several dependencies (check the source code for that also [pom.xml](./pom.xml#L22-55)):
   
   * **_spring-boot-starter-web_** - we need this to create simple RESTful web service 
@@ -63,9 +49,13 @@
     * [UserServiceImpl.java](./src/main/java/io/github/zelinskyi/services/impl/UserServiceImpl.java)
     
 
-***
+##### Third step:
 
-* **_Ok, so now lets move to most interesting part_**
+* So for now lets move to Elasticsearch part. We need to implement a simple repository.
+  Please, check the source code: [UserRepository.java](./src/main/java/io/github/zelinskyi/repositories/UserRepository.java)
+  You can see:
   
-  *  
+```java
+public interface UserRepository extends ElasticsearchCrudRepository<User, Long> {}
+```
 
