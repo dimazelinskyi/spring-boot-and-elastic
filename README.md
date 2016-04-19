@@ -65,7 +65,7 @@ So, now we have ready application for running.
 
 Check you project tree structure it should be like in repo:
 
-![alt text](./etc/project_strct.png "Project structure")
+![alt text](./etc/project_structure.png "Project structure")
 
 ##### Fourth step:
 
