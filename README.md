@@ -59,3 +59,14 @@
 public interface UserRepository extends ElasticsearchCrudRepository<User, Long> {}
 ```
 
+* Extending **ElasticsearchCrudRepository** we get basic CRUD functionality to work with Elasticsearch as data source.
+
+So, now we have ready application for running.
+
+Check you project tree structure it should be like in repo:
+
+![alt text](./etc/project_strct.png "Project structure")
+
+##### Fourth step:
+
+Lets to 
