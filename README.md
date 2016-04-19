@@ -21,6 +21,8 @@
 
 ##### Maven dependencies setup:
 
+---
+
 * Create maven project in your IDE.
 * Add Spring Boot dependencies into pom.xml (check the source code for that also [pom.xml](./pom.xml#L10-22)):
 (We will add Spring Boot parent into dependency management section)
@@ -33,7 +35,10 @@
   * **_spring-boot-starter-test_** - set of testing tool libraries
   * **_json-path-assert_** - helping library for unit tests
 
+
 ##### Creating entity, controller, service:
+
+---
 
 * First of all we need simple plain java object as DTO (in our case it will be User).
   * We will implements this class with help of Lombok library.
@@ -51,6 +56,8 @@
 
 ##### Creating repository:
 
+---
+
 * So for now lets move to Elasticsearch part. We need to implement a simple repository.
   Please, check the source code: [UserRepository.java](./src/main/java/io/github/zelinskyi/repositories/UserRepository.java)
   You can see:
@@ -67,8 +74,11 @@ Check you project tree structure it should be like in repo:
 
 ![alt text](./etc/tree.png "Project structure")
 
+
 ##### Run and check implementation:
+
+---
 
 Lets run application and check it:
 
-* To run it just 
+* To run it just run the class **SpringBootElasticsearchRunner**
