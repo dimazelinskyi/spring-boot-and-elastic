@@ -6,9 +6,11 @@
 ### Table of contents
 ***
 
-* [Hello user example](https://www.google.com)
+* **[Hello "user" example](./README.md#hello-user-example)**
   * [Some short info from Wikipedia](https://www.google.com)
-
+  * [Some short info from Wikipedia](https://www.google.com)
+* [Hello user example](https://www.google.com)
+ 
 
 
 ### Hello user example
