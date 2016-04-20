@@ -7,9 +7,10 @@
 ***
 
 * **[Hello "user" example](./README.md#hello-user-example)**
-  * [Some short info from Wikipedia](https://www.google.com)
-  * [Some short info from Wikipedia](https://www.google.com)
-* [Hello user example](https://www.google.com)
+  * [Some short info from Wikipedia](./README.md#some-short-info-from-wikipedia)
+  * [Prerequisites](./README.md#prerequisites)
+  * [Lets move to the example](./README.md#lets-move-to-the-example)
+* [Behind the scene of hello "user"](https://www.google.com)
  
 
 
