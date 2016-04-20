@@ -1,7 +1,17 @@
 ![alt text](./etc/sb_el.png "Spring Boot and Elasticsearch")
 
 
-## Simple example of usage Elasticsearch and Spring Boot together
+# Elastic and Spring Boot sample
+
+### Table of contents
+***
+
+* [Hello user example](https://www.google.com)
+  * [Some short info from Wikipedia](https://www.google.com)
+
+
+
+### Hello user example
 ***
 
 #### Some short info from Wikipedia:
