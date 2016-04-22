@@ -7,7 +7,12 @@
     <groupId>io.github.zelinskyi</groupId>
     <artifactId>spring-boot-and-elasticsearch</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Spring Boot with Elasticsearch sample</name>
+    <name>Spring Boot and Elastic sample</name>
+
+
+    <!--Spring Boot parent pom in dependency management section, so we don't need
+      to add it as parent for this project. More information:
+        https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-build-systems.html#using-boot-maven-without-a-parent-->
 
     <dependencyManagement>
         <dependencies>
@@ -27,25 +32,34 @@
     </properties>
 
     <dependencies>
+
+        <!--Allows to create simple RESTful web service-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!--Allows to work with Elastic Spring Data in Spring Boot-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
+
+        <!--Simplifying creation POJO library (no setters no getters)-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
 
+        <!--Allows to test Spring Boot apps-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--Helping library to check json during testing-->
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path-assert</artifactId>

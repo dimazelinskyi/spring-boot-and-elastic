@@ -1,4 +1,4 @@
-![alt text](./etc/sb_el.png "Spring Boot and Elasticsearch")
+![alt text](./etc/sb_el.png "Spring Boot and Elastic")
 
 
 # Elastic and Spring Boot sample
@@ -7,51 +7,46 @@
 ***
 
 * **[Hello "user" example](./README.md#hello-user-example)**
-  * [Some short info from Wikipedia](./README.md#some-short-info-from-wikipedia)
+  * [From Wikipedia](./README.md#from-wikipedia)
   * [Prerequisites](./README.md#prerequisites)
-  * [Lets move to the example](./README.md#lets-move-to-the-example)
-* [Behind the scene of hello "user"](https://www.google.com)
+  * [Maven dependencies setup](./README.md#maven-dependencies-setup)
+* **[Behind the scene of hello "user"](https://www.google.com)**
  
 
 
-### Hello user example
+### Hello "user" example
 ***
 
-#### Some short info from Wikipedia:
+#### From Wikipedia:
+***
 
  1. **Elasticsearch** - is a search server based on Lucene.
  2. **Spring Boot** - is Spring's convention-over-configuration solution for creating stand-alone, production-grade Spring based Applications that you can "just run".
 
 
 #### Prerequisites:
+***
 
-1. Installed Java IDE (In my case I will use IntelliJ IDEA‎).
+1. Installed Java IDE.
 2. Installed Maven and synchronized with your IDE.
 
 
-#### Lets move to the example:
-
-
-##### Maven dependencies setup:
-
----
+#### Maven dependencies setup:
+***
 
 * Create maven project in your IDE.
-* Add Spring Boot dependencies into pom.xml (check the source code for that also [pom.xml](./pom.xml#L10-22)):
-(We will add Spring Boot parent into dependency management section)
-
-* Also we need to add several dependencies (check the source code for that also [pom.xml](./pom.xml#L22-55)):
+* Add _spring-boot-dependencies_ into pom.xml (check the source code [pom.xml](./pom.xml#L12-27)):
+* Add Spring Boot starters dependencies (check the source code [pom.xml](./pom.xml#L34-69)):
   
-  * **_spring-boot-starter-web_** - we need this to create simple RESTful web service 
-  * **_spring-boot-starter-data-elasticsearch_** - we need this to work easily with Elasticsearch   
-  * **_lombok_** - useful tool library to simplify creating POJO 
-  * **_spring-boot-starter-test_** - set of testing tool libraries
-  * **_json-path-assert_** - helping library for unit tests
+  * _spring-boot-starter-web_
+  * _spring-boot-starter-data-elasticsearch_
+  * _spring-boot-starter-test_
+  * _lombok_ 
+  * _json-path-assert_
 
 
-##### Creating entity, controller, service:
-
----
+#### Creating entity, controller, service:
+***
 
 * First of all we need simple plain java object as DTO (in our case it will be User).
   * We will implements this class with help of Lombok library.
