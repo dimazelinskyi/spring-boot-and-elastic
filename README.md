@@ -1,4 +1,4 @@
-![alt text](./etc/sb_el.png "Spring Boot and Elastic")
+![alt text](./etc/sb_el_1.png "Spring Boot and Elastic")
 
 
 # Elastic and Spring Boot sample
