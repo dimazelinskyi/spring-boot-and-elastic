@@ -1,7 +1,7 @@
 ![alt text](./etc/sb_el_2.png "Spring Boot and Elastic")
 
 
-# Spring Boot and Elastic sample
+# Spring Boot and Elastic
 
 ### Table of contents
 ***
@@ -10,6 +10,9 @@
   * [From Wikipedia](./README.md#from-wikipedia)
   * [Prerequisites](./README.md#prerequisites)
   * [Maven dependencies setup](./README.md#maven-dependencies-setup)
+  * [Creating entity, controller, service](./README.md#creating-entity-controller-service)
+  * [Creating repository](./README.md#creating-repository)
+  * [Run and check implementation](./README.md#run-and-check-implementation)
 * **[Behind the scene of hello "user"](https://www.google.com)**
  
 
@@ -62,9 +65,8 @@
     * [UserServiceImpl.java](./src/main/java/io/github/zelinskyi/services/impl/UserServiceImpl.java)
     
 
-##### Creating repository:
-
----
+#### Creating repository:
+***
 
 * So for now lets move to Elasticsearch part. We need to implement a simple repository.
   Please, check the source code: [UserRepository.java](./src/main/java/io/github/zelinskyi/repositories/UserRepository.java)
@@ -83,9 +85,8 @@ Check you project tree structure it should be like in repo:
 ![alt text](./etc/tree.png "Project structure")
 
 
-##### Run and check implementation:
-
----
+#### Run and check implementation:
+***
 
 Lets run application and check it:
 
