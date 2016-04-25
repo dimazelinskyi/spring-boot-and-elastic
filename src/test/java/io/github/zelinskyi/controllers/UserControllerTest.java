@@ -16,7 +16,6 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
@@ -24,7 +23,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standal
 @RunWith(MockitoJUnitRunner.class)
 public class UserControllerTest {
 
-    public static final long USER_ID = 1L;
+    private static final long USER_ID = 1L;
     @Mock
     private UserService userService;
     @InjectMocks
@@ -34,7 +33,7 @@ public class UserControllerTest {
 
     @Test
     public void testSave() throws Exception {
-        mockMvc.perform(post("/users").contentType(MediaType.APPLICATION_JSON)
+        mockMvc.perform(post("/user").contentType(MediaType.APPLICATION_JSON)
                 .content("{\"id\":\"1\"}")).andExpect(status().isOk());
         verify(userService).save(any(User.class));
     }
@@ -45,7 +44,7 @@ public class UserControllerTest {
         User searchResult = new User();
         searchResult.setId(USER_ID);
         when(userService.find(USER_ID)).thenReturn(searchResult);
-        mockMvc.perform(get("/users/1").contentType(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get("/user/1").contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1));
 
