@@ -13,7 +13,6 @@
   * [Creating entity, controller, service](./README.md#creating-entity-controller-service)
   * [Creating repository](./README.md#creating-repository)
   * [Run and check implementation](./README.md#run-and-check-implementation)
-* **[Behind the scene of hello "user"](https://www.google.com)**
  
 
 
