@@ -13,6 +13,7 @@
   * [Creating entity, controller, service](./README.md#creating-entity-controller-service)
   * [Creating repository](./README.md#creating-repository)
   * [Run and check implementation](./README.md#run-and-check-implementation)
+* **[How actually it works](https://github.com/zelinskyi/spring-boot-and-elastic/wiki/How-actually-it-works)**
  
 
 
