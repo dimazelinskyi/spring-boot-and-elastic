@@ -86,12 +86,29 @@
     </dependencies>
 </project>
 ```
-
 ***
 
-#### Creating entity, controller, service:
-***
+#### Creating entity:
 
+  ```java
+  package io.github.dimazelinskyi.springboot.elastic.domain;
+  
+  import lombok.Getter;
+  import lombok.Setter;
+  import org.springframework.data.annotation.Id;
+  import org.springframework.data.elasticsearch.annotations.Document;
+  
+  @Document(indexName = "user")
+  @Getter
+  @Setter
+  public class User {
+  
+      @Id
+      private long id;
+      private String firstName;
+      private String lastName;
+  }
+  ```
 * First of all we need simple plain java object as DTO (in our case it will be User).
   * We will implements this class with help of Lombok library.
   * Follow the source code: [User.java](./src/main/java/io/github/zelinskyi/domain/User.java)
