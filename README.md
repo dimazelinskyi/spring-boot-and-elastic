@@ -1,19 +1,13 @@
 ![alt text](./etc/sb_el_2.png "Spring Boot and Elastic")
 
 
-# Spring Boot and Elastic
+# Spring Boot and Elastic start point
 
-### Table of contents
+### 1. Project structure
+
+![alt text](./etc/tree.png "Project structure")
+
 ***
-
-* **[Hello "user" example](./README.md#hello-user-example)**
-  * [From Wikipedia](./README.md#from-wikipedia)
-  * [Prerequisites](./README.md#prerequisites)
-  * [Maven dependencies setup](./README.md#maven-dependencies-setup)
-  * [Creating entity, controller, service](./README.md#creating-entity-controller-service)
-  * [Creating repository](./README.md#creating-repository)
-  * [Run and check implementation](./README.md#run-and-check-implementation)
- 
 
 
 ### Hello "user" example
@@ -81,7 +75,7 @@ So, now we have ready application for running.
 
 Check you project tree structure it should be like in repo:
 
-![alt text](./etc/tree.png "Project structure")
+
 
 
 #### Run and check implementation:
