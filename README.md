@@ -6,13 +6,13 @@
 
 ***
 
-### 1. Project structure
+#### 1. Project structure
 
 ![alt text](./etc/tree.png "Project structure")
 
 ***
 
-### 2. Maven [pom.xml](./pom.xml)
+#### 2. Maven [pom.xml](./pom.xml)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -88,7 +88,7 @@
 ```
 ***
 
-### 3. Creating entity: [User.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/domain/User.java)
+#### 3. Creating entity: [User.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/domain/User.java)
 
   ```java
   package io.github.dimazelinskyi.springboot.elastic.domain;
@@ -111,7 +111,7 @@
   ```
 ***
 
-### 4. Creating repository: [UserRepository.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/repositories/UserRepository.java)
+#### 4. Creating repository: [UserRepository.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/repositories/UserRepository.java)
 
 ```java
 public interface UserRepository extends ElasticsearchCrudRepository<User, Long> {
@@ -120,8 +120,8 @@ public interface UserRepository extends ElasticsearchCrudRepository<User, Long> 
 ```
 ***
 
-### 5. Creating service and implementation:
-### a. [UserService.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/services/UserService.java) 
+#### 5. Creating service and service implementation:
+#### a. [UserService.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/services/UserService.java) 
 
 ```java
 package io.github.dimazelinskyi.springboot.elastic.services;
@@ -162,7 +162,7 @@ public class UserServiceImpl implements UserService {
 }
 ```
 ***
-### 6. Creating Spring Boot runner [SpringBootElasticsearchRunner.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/SpringBootElasticsearchRunner.java):
+#### 6. Creating Spring Boot runner [SpringBootElasticsearchRunner.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/SpringBootElasticsearchRunner.java):
   
   ```java
   package io.github.dimazelinskyi.springboot.elastic;
