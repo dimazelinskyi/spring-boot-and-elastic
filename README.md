@@ -88,7 +88,7 @@
 ```
 ***
 
-### 3. Creating entity: [User.java](./src/main/java/io/github/dimazelinskyi/domain/User.java)
+### 3. Creating entity: [User.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/domain/User.java)
 
   ```java
   package io.github.dimazelinskyi.springboot.elastic.domain;
@@ -111,14 +111,53 @@
   ```
 ***
 
-### 4. Creating repository: [UserRepository.java](./src/main/java/io/github/dimazelinskyi/repositories/UserRepository.java)
+### 4. Creating repository: [UserRepository.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/repositories/UserRepository.java)
 
 ```java
 public interface UserRepository extends ElasticsearchCrudRepository<User, Long> {
 
 }
 ```
+***
 
+### 5. Creating service and implementation [UserService.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/sevices/UserService.java) 
+
+```java
+package io.github.dimazelinskyi.springboot.elastic.services;
+
+
+import io.github.dimazelinskyi.springboot.elastic.domain.User;
+
+public interface UserService {
+
+    void save(User user);
+    User find(Long id);
+}
+```
+```java
+package io.github.dimazelinskyi.springboot.elastic.services.impl;
+
+import io.github.dimazelinskyi.springboot.elastic.domain.User;
+import io.github.dimazelinskyi.springboot.elastic.repositories.UserRepository;
+import io.github.dimazelinskyi.springboot.elastic.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public void save(User user) {
+        userRepository.save(user);
+    }
+
+    public User find(Long id) {
+        return userRepository.findOne(id);
+    }
+}
+```
 
 
 
