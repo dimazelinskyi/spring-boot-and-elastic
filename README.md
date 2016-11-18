@@ -109,36 +109,15 @@
       private String lastName;
   }
   ```
-* First of all we need simple plain java object as DTO (in our case it will be User).
-  * We will implements this class with help of Lombok library.
-  * Follow the source code: 
-
-* Lets create controller:
-  * Check the source code of controller: [UserController.java](./src/main/java/io/github/zelinskyi/controllers/UserController.java)
-  * This is simple Spring Rest controller with two methods.
-
-* Also we need to implement service layer:
-  * Check the source code of two classes:
-    * [UserService.java](./src/main/java/io/github/zelinskyi/services/UserService.java)
-    * [UserServiceImpl.java](./src/main/java/io/github/zelinskyi/services/impl/UserServiceImpl.java)
-    
-
-#### Creating repository:
 ***
 
-* So for now lets move to Elasticsearch part. We need to implement a simple repository.
-  Please, check the source code: [UserRepository.java](./src/main/java/io/github/zelinskyi/repositories/UserRepository.java)
-  You can see:
-  
+### 4. Creating repository: [UserRepository.java](./src/main/java/io/github/dimazelinskyi/repositories/UserRepository.java)
+
 ```java
-public interface UserRepository extends ElasticsearchCrudRepository<User, Long> {}
+public interface UserRepository extends ElasticsearchCrudRepository<User, Long> {
+
+}
 ```
-
-* Extending **ElasticsearchCrudRepository** we get basic CRUD functionality to work with Elasticsearch as data source.
-
-So, now we have ready application for running.
-
-Check you project tree structure it should be like in repo:
 
 
 
