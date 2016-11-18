@@ -1,4 +1,4 @@
-package io.github.zelinskyi.domain;
+package io.github.dimazelinskyi.domain;
 
 import lombok.Getter;
 import lombok.Setter;

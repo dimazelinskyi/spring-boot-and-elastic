@@ -1,8 +1,8 @@
-package io.github.zelinskyi.services.impl;
+package io.github.dimazelinskyi.services.impl;
 
-import io.github.zelinskyi.domain.User;
-import io.github.zelinskyi.repositories.UserRepository;
-import io.github.zelinskyi.services.UserService;
+import io.github.dimazelinskyi.domain.User;
+import io.github.dimazelinskyi.repositories.UserRepository;
+import io.github.dimazelinskyi.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

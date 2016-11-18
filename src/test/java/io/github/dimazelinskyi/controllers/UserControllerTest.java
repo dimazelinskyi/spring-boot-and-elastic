@@ -1,8 +1,8 @@
-package io.github.zelinskyi.controllers;
+package io.github.dimazelinskyi.controllers;
 
 
-import io.github.zelinskyi.domain.User;
-import io.github.zelinskyi.services.UserService;
+import io.github.dimazelinskyi.domain.User;
+import io.github.dimazelinskyi.services.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

@@ -1,7 +1,7 @@
-package io.github.zelinskyi.services;
+package io.github.dimazelinskyi.services;
 
 
-import io.github.zelinskyi.domain.User;
+import io.github.dimazelinskyi.domain.User;
 
 public interface UserService {
 

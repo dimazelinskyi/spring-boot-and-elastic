@@ -1,4 +1,4 @@
-package io.github.zelinskyi;
+package io.github.dimazelinskyi;
 
 
 import org.springframework.boot.SpringApplication;
