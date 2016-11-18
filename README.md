@@ -1,14 +1,12 @@
-![alt text](./etc/sb_el_2.png "Spring Boot and Elastic")
-
-
 # Spring Boot and Elastic start point
+
+![alt text](./etc/sb_el_2.png "Spring Boot and Elastic")
 
 ### 1. Project structure
 
 ![alt text](./etc/tree.png "Project structure")
 
 ***
-
 
 ### Hello "user" example
 ***
