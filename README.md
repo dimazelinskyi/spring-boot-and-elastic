@@ -12,7 +12,7 @@
 
 ***
 
-### 2. Maven pom.xml
+### 2. Maven [pom.xml](./pom.xml)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -88,34 +88,6 @@
 ```
 
 ***
-
-#### From Wikipedia:
-***
-
- 1. **Elasticsearch** - is a search server based on Lucene.
- 2. **Spring Boot** - is Spring's convention-over-configuration solution for creating stand-alone, production-grade Spring based Applications that you can "just run".
-
-
-#### Prerequisites:
-***
-
-1. Installed Java IDE.
-2. Installed Maven and synchronized with your IDE.
-
-
-#### Maven dependencies setup:
-***
-
-* Create maven project in your IDE.
-* Add _spring-boot-dependencies_ into pom.xml (check the source code [pom.xml](./pom.xml#L12-27)):
-* Add Spring Boot starters dependencies (check the source code [pom.xml](./pom.xml#L34-69)):
-  
-  * _spring-boot-starter-web_
-  * _spring-boot-starter-data-elasticsearch_
-  * _spring-boot-starter-test_
-  * _lombok_ 
-  * _json-path-assert_
-
 
 #### Creating entity, controller, service:
 ***
