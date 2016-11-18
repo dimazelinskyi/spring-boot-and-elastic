@@ -88,7 +88,7 @@
 ```
 ***
 
-#### Creating entity:
+### 3. Creating entity: [User.java](./src/main/java/io/github/dimazelinskyi/domain/User.java)
 
   ```java
   package io.github.dimazelinskyi.springboot.elastic.domain;
@@ -111,7 +111,7 @@
   ```
 * First of all we need simple plain java object as DTO (in our case it will be User).
   * We will implements this class with help of Lombok library.
-  * Follow the source code: [User.java](./src/main/java/io/github/zelinskyi/domain/User.java)
+  * Follow the source code: 
 
 * Lets create controller:
   * Check the source code of controller: [UserController.java](./src/main/java/io/github/zelinskyi/controllers/UserController.java)
