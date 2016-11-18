@@ -120,7 +120,8 @@ public interface UserRepository extends ElasticsearchCrudRepository<User, Long> 
 ```
 ***
 
-### 5. Creating service and implementation [UserService.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/sevices/UserService.java) 
+### 5. Creating service and implementation:
+### a. [UserService.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/services/UserService.java) 
 
 ```java
 package io.github.dimazelinskyi.springboot.elastic.services;
@@ -134,6 +135,8 @@ public interface UserService {
     User find(Long id);
 }
 ```
+### b. [UserServiceImpl.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/services/impl/UserServiceImpl.java)
+
 ```java
 package io.github.dimazelinskyi.springboot.elastic.services.impl;
 
@@ -158,8 +161,24 @@ public class UserServiceImpl implements UserService {
     }
 }
 ```
-
-
+***
+### 6. Creating Spring Boot runner:
+  
+  ```java
+  package io.github.dimazelinskyi.springboot.elastic;
+  
+  
+  import org.springframework.boot.SpringApplication;
+  import org.springframework.boot.autoconfigure.SpringBootApplication;
+  
+  @SpringBootApplication
+  public class SpringBootElasticsearchRunner {
+  
+      public static void main(String[] args) {
+          SpringApplication.run(SpringBootElasticsearchRunner.class);
+      }
+  }
+  ```
 
 #### Run and check implementation:
 ***
