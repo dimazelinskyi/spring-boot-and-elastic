@@ -1,4 +1,4 @@
-# Spring Boot and Elastic start point
+# Spring Boot and Elastic :: starting point
 
 ***
 
