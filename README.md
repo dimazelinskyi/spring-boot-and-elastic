@@ -179,17 +179,12 @@ public class UserServiceImpl implements UserService {
       }
   }
   ```
-
-#### Run and check implementation:
 ***
 
-Lets run application and check it:
+#### Run and check implementation:
 
-* To run it just run the class **SpringBootElasticsearchRunner**
 
-Now we can check our creation and searching user by invoking url with payload:
 
-* To check creation of user invoke this url with next JSON payload using POST HTTP method: 
 
 ```
 127.0.0.1:8080/user
