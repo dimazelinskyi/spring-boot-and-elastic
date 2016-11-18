@@ -162,7 +162,7 @@ public class UserServiceImpl implements UserService {
 }
 ```
 ***
-### 6. Creating Spring Boot runner:
+### 6. Creating Spring Boot runner [SpringBootElasticsearchRunner.java](./src/main/java/io/github/dimazelinskyi/springboot/elastic/SpringBootElasticsearchRunner.java):
   
   ```java
   package io.github.dimazelinskyi.springboot.elastic;
