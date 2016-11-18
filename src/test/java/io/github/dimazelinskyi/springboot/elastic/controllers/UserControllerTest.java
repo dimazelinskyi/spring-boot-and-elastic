@@ -1,8 +1,8 @@
-package io.github.dimazelinskyi.controllers;
+package io.github.dimazelinskyi.springboot.elastic.controllers;
 
 
-import io.github.dimazelinskyi.domain.User;
-import io.github.dimazelinskyi.services.UserService;
+import io.github.dimazelinskyi.springboot.elastic.domain.User;
+import io.github.dimazelinskyi.springboot.elastic.services.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

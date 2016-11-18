@@ -1,4 +1,4 @@
-package io.github.dimazelinskyi.domain;
+package io.github.dimazelinskyi.springboot.elastic.domain;
 
 import lombok.Getter;
 import lombok.Setter;

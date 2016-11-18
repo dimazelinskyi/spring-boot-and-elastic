@@ -1,4 +1,4 @@
-package io.github.dimazelinskyi;
+package io.github.dimazelinskyi.springboot.elastic;
 
 
 import org.springframework.boot.SpringApplication;
